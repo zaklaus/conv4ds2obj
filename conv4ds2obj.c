@@ -91,7 +91,7 @@ main(int argc, char **argv)
                     char VLine[512] = {0};
                     sprintf(VLine, "v %f %f %f\r\nvt %f %f\r\nvn %f %f %f\r\n",
                             V->Pos.X, V->Pos.Y, V->Pos.Z,
-                            V->UV.X, V->UV.Y,
+                            V->UV.X, -V->UV.Y,
                             V->Normal.X, V->Normal.Y, V->Normal.Z);
                     IOFileWrite(MdlIdx, VLine, strlen(VLine));
                 }
